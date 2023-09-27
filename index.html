@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Phrase aléatoire</title>
+</head>
+<body>
+  <div id="phrase">
+    <!-- La phrase aléatoire sera affichée ici -->
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Générez une phrase aléatoire
+      const phrase = generateRandomPhrase();
+
+      // Affichez la phrase aléatoire
+      document.getElementById("phrase").innerHTML = phrase;
+    });
+
+    function generateRandomPhrase() {
+      // Créez une liste de phrases
+      const phrases = ["Créer un changement de tonalité ou de tempo pour donner un nouveau souffle à ta composition",
+"Ajoute une piste de guitare acoustique pour enrichir le son",
+"Laisse seulement la basse et la batterie jouer dans l'un des couplets",
+"Réintroduis la mélodie de l'intro dans le refrain pour créer une continuité",
+"Ajoute un solo de l'instrument de ton choix avec le refrain en arrière-plan",
+"Rends le dernier refrain deux fois plus long ou deux fois plus rapide pour un final puissant",
+"Augmente la tonalité d'un ton pour le dernier refrain et intensifie la fin",
+"Créer une mélodie de voix avec un instrument",
+"Créer un pré-refrain afin de créer la sensation d'une montée progressive de l'intensité de la musique",
+"Crée un silence de 1 à 2 temps avant le refrain pour un effet explosif",
+"Créer une progression constante de la chanson en introduisant progressivement chaque instrument l'un après l'autre",
+"Supprime un instrument",
+"Au lieu d'ajouter plus de pistes, supprime une piste pour clarifier la composition",
+"Pas de mélodie sur le premier refrain, puis une mélodie sur le 2nd refrain, puis une harmonisation complète sur le 3eme",
+"Créer une mélodie deux fois plus lente que ta chanson, noyée dans la reverb",
+"Utilise un rythme de batterie compliqué pour les couplets/ponts et un rythme simple pour le refrain (ou inversement)",
+"Emprunte le style de 'Unforgiven' de Metallica avec des couplets forts et des refrains calmes (formule inversée)",
+"Débute par ta chanson par le refrain",
+"Créer la mélodie ou les accords en t'enregistrant sur les notes vocales de ton téléphone",
+"Puise ton inspiration dans une partie d'une chanson que tu as récemment appréciée pour enrichir ta composition musicale",
+"Fais une pause, pour revenir avec un esprit frais",
+"Créer un break / groove de batterie afin de faciliter la transition vers une nouvelle section de la chanson",
+"Avant le refrain, termine sur un 'V-Chord'. Technique musicale courante pour construire de la tension et préparer l'auditeur au point culminant de la chanson, c'est-à-dire le refrain. Le 'V-chord' fait référence à l'accord construit sur la cinquième note de la gamme de la tonalité dans laquelle vous composez. Par exemple, si votre chanson est en Do majeur (C Maj), le 'V-chord' serait un accord de Sol majeur (G Maj). Cherchez la gamme de votre chanson sur Google et regardez la 5ème note, terminez votre pre-refrain sur cette accord",
+"Écrit une mélodie qui commence par la Tierce ou la Quinte de l'accord qui est joué",
+"Commence par écrire les paroles ou la mélodie de voix, puis construis la musique autour",
+"Essaye un accordage différent (ou juste une corde accordée différemment). Tu peux chercher sur internet les accordages utilisés en midwest emo (FACGCE, DADGAD, DAEAC#E, FACGCE...)",
+"Fais en sorte qu'un élément de la chanson change toutes les 15 secondes pour maintenir l'intérêt",
+"Introduis une section de la chanson où seuls les vocaux sont présents, pour un effet a capella",
+"Intègre des instruments traditionnels ou ethniques pour ajouter une touche unique à ta composition",
+"Créer une mélodie qui saute une note à intervalles réguliers pour un effet mélodique distinctif",
+"Crée une section de chant en canon où une mélodie est répétée avec un décalage, ajoutant de la profondeur à la chanson",
+"Met un effet spécial sur ta piste : Glitch / Vocoder",
+"Inverse la structure habituelle en commençant par un couplet puissant suivi de refrain calme",
+"Enregistre une mélodie et joue-la en arrière pour créer une ambiance mystérieuse et inversée",
+"Expérimente avec une progression d'accords peu conventionnelle pour créer une atmosphère unique",
+"Ajoute un sample de bruit de la vie quotidienne, comme une rue animée ou des oiseaux, pour une atmosphère authentique",
+"Créer une transition avec un synthétiseur",
+"Ajoute un sample d'un film avec le site https://www.playphrase.me/",
+"Ajoute des percussions tribales pour apporter un rythme différent et dynamique à la composition",
+"Passe en 5/4 ou 7/8",
+"Passe l'instrument qui était le moins fort au niveau de celui avec le volume le plus fort",
+"Ajoute une note triolet à ta prochaine mélodie",
+"Ajoute un accord suspendu avant ton refrain",
+"Met une partie de ta chanson en Lo-Fi",
+"Ajoute un effet ou un synthé 8bit",
+"Inverse la stéréo, tout ce qui est à gauche passe à droite et inversement",
+"Fait quelque chose de très cliché",
+"Utilise un instrument que tu n'as jamais utilisé",
+"Accepte les conseils de quelqu'un.e",
+"Un instrument mélodique devient un instrument rythmique",
+"Mettre en valeur les répétitions",
+"Met quelque chose à l'envers / Fait quelque chose à l'envers"];
+
+      // Choisissez une phrase au hasard
+      const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+
+      // Retournez la phrase
+      return randomPhrase;
+    }
+  </script>
+</body>
+</html>
